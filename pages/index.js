@@ -17,11 +17,10 @@ export default function Home({getdata}) {
       <Head>
         <title>{getdata.getinfo.name}</title>
         <meta name="description" content={getdata.getinfo.des} />
-        <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
         <link href="https://fonts.googleapis.com/css2?family=Almarai&display=swap" rel="stylesheet"></link>
-        <link rel="shortcut icon" href={getdata.getinfo.logo} type="image/x-icon" />
+        <link rel="icon" href={getdata.getinfo.logo} type="image/x-icon" />
       </Head>
           <Cover data={getdata.getcov} />
           <NEw data={getdata.products} />
