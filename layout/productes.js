@@ -63,10 +63,10 @@ crossOrigin="anonymous">
   </ul>
   </div>
   <div className="row col-12 col-lg-9 ">
-  <div className="row  d-block d-lg-none">
+  <div className="row w-100 d-block d-lg-none">
         {
         mob1.map((item)=>(
-            <div className="col-12 col-lg-3 p-4 " key={item.code} >
+            <div className="w-100 p-2" key={item.code} >
              <Image className="col-12 col-lg-3 border border-info p-1 pointer1" onClick={(e)=>handelrouter(e,item.code)}  loader={() => `${item.imges}?w=500px`} src={item.imges} unoptimized="false"    width={"500px"}
       height={"400px"}/>
             <h6 className=" ms-auto m-3 title-img"> {item.title} </h6>

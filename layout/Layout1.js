@@ -84,16 +84,19 @@ crossOrigin="anonymous"></script>
 <div className="divsmal d-block d-lg-none">
 <nav className="navbar navbar-light bg-white">
   <div className="container">
-    <a className="navbar-brand mx-auto" href="#">
+    <a className="navbar-brand mx-auto" href="/">
       <img src="/logo.png" alt="" width="100" height="70" className="d-inline-block align-text-top"/>
     </a>
   </div>
 </nav>
 <nav className={`navbar navbar-expand-lg navbar-light bg-light ${styles.navmob}`}>
   <div className="container-fluid">
-  <a className="navbar-brand" href="#">
-      <img src="/cart.svg" alt="" width="50" height="30" className="d-inline-block align-text-top"/>
-    </a>
+  <Link href='/cart'>
+    <a className="navbar-brand" >
+         <span className="nof">{appState.length?appState.length:""}</span>
+     <img src="/cart.svg" alt="" width="50" height="30" className="d-inline-block align-text-top"/>
+        </a>
+        </Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
@@ -120,11 +123,11 @@ crossOrigin="anonymous"></script>
 <div className="fixed">
   <div className={`fixed-item rounded text-center fixed1 row ${activ}`}  id="fixed1">
   <a className="bg-light text-success col-8 p-2" href={`https://wa.me/${ info.whats?info.whats:""}`}>{info.whats?info.whats:""}</a>
-  <i onClick={fixed} className="fab fa-whatsapp col-4 bg-success fa-2x p-1 text-light"></i>
+  <i onClick={fixed} className="fab fa-whatsapp col-4 bg-brand fa-2x p-1 text-light"></i>
    </div>
   <div className={`fixed-item rounded text-center fixed1 row ${activ1}`}>
   <a className="bg-light col-8 text-success p-2" href={`tel:   ${info.mob?info.mob:""} `}>{info.mob?info.mob:""}</a>
-  <i onClick={fixed1} className="fas fa-phone col-4  bg-success fa-2x p-1 text-light"></i>
+  <i onClick={fixed1} className="fas fa-phone col-4  bg-brand fa-2x p-1 text-light"></i>
     </div>
 </div>
 {/* --------------------------------------------------------------------------------------------------- */}
