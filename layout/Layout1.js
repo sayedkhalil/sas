@@ -91,7 +91,7 @@ crossOrigin="anonymous"></script>
 </nav>
 <nav className={`navbar navbar-expand-lg navbar-light bg-light ${styles.navmob}`}>
   <div className="container-fluid">
-  <Link href='/cart'>
+   <Link href='/cart'>
     <a className="navbar-brand" >
          <span className="nof">{appState.length?appState.length:""}</span>
      <img src="/cart.svg" alt="" width="50" height="30" className="d-inline-block align-text-top"/>
