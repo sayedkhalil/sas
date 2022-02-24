@@ -104,3 +104,14 @@ a {
 .bg-brand {
   background-color: #88b842;
 }
+.nav-side {
+  display: none;
+  visibility: hidden;
+  transition: all 1s ease-in-out;
+}
+.nav-side-active {
+  display: block;
+  visibility: visible;
+  visibility: visible;
+  transition: all 1s ease-in-out;
+}
