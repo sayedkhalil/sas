@@ -42,7 +42,7 @@ export async function getServerSideProps(){
   const docRef = doc(db, "cover", "cover");
   const docSnap = await getDoc(docRef);
   const getcover =  docSnap.data()?docSnap.data().covers:[]
-  const docRefpar = doc(db, "partn", "partn");
+  const docRefpar = doc(db, "partn", "partn"); 
   const docSnapar = await getDoc(docRefpar);
   const getpartn =  docSnapar.data()?docSnapar.data().partns:[]
   const codelist = collection(db, 'category');
