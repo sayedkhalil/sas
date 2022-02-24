@@ -32,12 +32,16 @@ const [category,setcategory]=useState([]);
 const [info,setinfo]=useState({});
 const[activ,setactiv]=useState('')
 const[activ1,setactiv1]=useState('')
+const[nav,setnav]=useState("nav-side")
 
 const fixed=()=>{
  activ=="fixed-active"?setactiv(""):setactiv("fixed-active");setactiv1('')
 }
 const fixed1=()=>{
   activ1=="fixed-active"?setactiv1(""):setactiv1("fixed-active");setactiv('')
+ }
+ const onnave=()=>{
+   nav=="nav-side-active"?setnav("nav-side"):setnav("nav-side-active")
  }
 
   return (  
@@ -97,11 +101,11 @@ crossOrigin="anonymous"></script>
      <img src="/cart.svg" alt="" width="50" height="30" className="d-inline-block align-text-top"/>
         </a>
         </Link>
-    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button className="navbar-toggler" type="button" onClick={onnave}>
       <span className="navbar-toggler-icon"></span>
     </button>
-    <div className="collapse navbar-collapse" id="navbarNav">
-      <ul className="navbar-nav ">
+    <div className="  navbar-collapse " >
+      <ul className={`navbar-nav ${nav} `}>
         <li className="nav-item ms-auto">
            <Link href={`/`}>
           <a className="nav-link active" aria-current="page" >الرئيسية</a>
@@ -109,8 +113,8 @@ crossOrigin="anonymous"></script>
         </li>
         {
   category1.map((item) => (
-       <li className="nav-item ms-auto" key={item.name}>
-             <Link href={`/${item.name}`}>
+       <li className="nav-item ms-auto" key={item.name} onClick={()=>setnav("nav-side")}>
+             <Link href={`/${item.name}`} >
           <a className="nav-link  " >{item.name}</a>
              </Link>
        </li>
