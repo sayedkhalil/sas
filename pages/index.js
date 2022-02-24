@@ -33,7 +33,7 @@ export default function Home({getdata}) {
   )
 }
 export async function getServerSideProps(){
-  const de=[]
+  const de=[]  
   const opnionarr=[]
   const pro=[]
   const infoRef = doc(db, "info", "info");
