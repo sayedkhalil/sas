@@ -20,55 +20,10 @@ crossOrigin="anonymous">
 </script>
 <div   >
     <div className="justify-content-md-center gap row">{ props.data.map((item)=>(
-    <Image className="col-12 col-lg-3 border border-info p-1 rounded-circle" key={item}  loader={() => item} src={item}  unoptimized="false"  width={"250px"}
-      height={"250px"}/>))}
+    <Image className="col-12 col-lg-3 border border-info p-1 rounded-circle" key={item}  loader={() => item} src={item}  unoptimized="false"  width={"300px"}
+      height={"300px"}/>))}
     </div>
-{/* <Carousel infiniteLoop="true"	showThumbs={false} showIndicators={false} showStatus={false} >
-                  <div className="row ">
-                     <div className="col-12 col-lg-3 p-4 ">
-                         <img className="item-img" src="/ee.jpg" alt="" />
-                         <h6 className=" ms-auto m-3 title-img" >باب ألمونتال </h6>
-                         <button type="button" className="btn btn-success">إضافة لطلب التسعير</button>
-                     </div>
-                     <div className="col-12 col-lg-3 p-4 ">
-                         <img className="item-img" src="/ee.jpg" alt="" />
-                         <h6 className=" ms-auto m-3 title-img" >باب ألمونتال </h6>
-                         <button type="button" className="btn btn-success">إضافة لطلب التسعير</button>
-                     </div>
-                     <div className="col-12 col-lg-3 p-4 ">
-                         <img className="item-img" src="/ee.jpg" alt="" />
-                         <h6 className=" ms-auto m-3 title-img" >باب ألمونتال </h6>
-                         <button type="button" className="btn btn-success">إضافة لطلب التسعير</button>
-                     </div>
-                     <div className="col-12 col-lg-3 p-4 ">
-                         <img className="item-img" src="/ee.jpg" alt="" />
-                         <h6 className=" ms-auto m-3 title-img" >باب ألمونتال </h6>
-                         <button type="button" className="btn btn-success">إضافة لطلب التسعير</button>
-                     </div>
-                  </div>
-                  <div className="row ">
-                     <div className="col-12 col-lg-3 p-4 ">
-                         <img className="item-img" src="/ee.jpg" alt="" />
-                         <h6 className=" ms-auto m-3 title-img" >باب ألمونتال </h6>
-                         <button type="button" className="btn btn-success">إضافة لطلب التسعير</button>
-                     </div>
-                     <div className="col-12 col-lg-3 p-4 ">
-                         <img className="item-img" src="/ee.jpg" alt="" />
-                         <h6 className=" ms-auto m-3 title-img" >باب ألمونتال </h6>
-                         <button type="button" className="btn btn-success">إضافة لطلب التسعير</button>
-                     </div>
-                     <div className="col-12 col-lg-3 p-4 ">
-                         <img className="item-img" src="/ee.jpg" alt="" />
-                         <h6 className=" ms-auto m-3 title-img" >باب ألمونتال </h6>
-                         <button type="button" className="btn btn-success">إضافة لطلب التسعير</button>
-                     </div>
-                     <div className="col-12 col-lg-3 p-4 ">
-                         <img className="item-img" src="/ee.jpg" alt="" />
-                         <h6 className=" ms-auto m-3 title-img" >باب ألمونتال </h6>
-                         <button type="button" className="btn btn-success">إضافة لطلب التسعير</button>
-                     </div>
-                  </div>
- </Carousel> */}
+
  </div>
 </div>
     );
