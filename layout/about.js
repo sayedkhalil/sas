@@ -21,7 +21,7 @@ crossOrigin="anonymous">
     props.data.des
 }
 </p>
-<a className="btn btn-primary" href="/images/myw3schoolsimage.jpg" download>تحميل بروفايل الشركة</a>
+<a className="btn btn-primary" href="https://drive.google.com/file/d/1jbV8NNHNoWexVnYC45UUkTV1RPBtJfJm/view?usp=sharing" download>تحميل بروفايل الشركة</a>
 </div>
     );
 }
