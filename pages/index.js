@@ -6,7 +6,7 @@ import Cover from '../layout/cover'
 import NEw from '../layout/new'
 import Opnion from '../layout/opnion'
 import Partener from '../layout/partener'
-import Productes from '../layout/productes'
+import Productes from '../layout/productes' 
 import styles from '../styles/Home.module.css'
 import { db, storage } from "../firebase";
 import { collection, addDoc ,getDocs,doc,Timestamp,deleteDoc , setDoc,getDoc, query, where} from "firebase/firestore";
